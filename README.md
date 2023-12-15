@@ -25,7 +25,7 @@ Content-Type: application/json
 
 {
     "name": "John Doe",
-    "age": 30,
+    "phone": 99999,
     "email": "john@example.com",
-    "address": "123 Street, City"
+    "address": "London"
 }
