@@ -1,6 +1,5 @@
-# Django User Management API
+# Django PdfGenerator
 
-Welcome to our Django User Management API!
 
 ## API Endpoints
 
