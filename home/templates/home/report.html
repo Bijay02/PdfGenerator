@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .header-image {
+            display: block;
+            margin: 0 auto;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center" style="text-align: center;">
+        <img src="C:\Users\acer1\OneDrive\Desktop\Django\core\home\image\navya_advisors_logo.jpg" alt="Company's logo" class="header-image" style="margin-bottom: 0;">
+        <h1 style="color: rgb(27, 113, 194); margin: 0;">Navya Advisors Limited</h1>
+        <h5 style="margin: 0;">+977 9865013820, +977 1 4543680</h5>
+        <h5 style="margin: 0;">Uttardhoka, Narayan Hiti Palace <br> Lazimpat, Kathmandu, Nepal</h5>
+    </div>
+    
+    
+    <table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Father Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.phone }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.address }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
